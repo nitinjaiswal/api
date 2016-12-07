@@ -124,7 +124,7 @@ This api has five main functions :
 
 ### Delete a product of given pid
 
- - **URL** : https://vast-everglades-95203.herokuapp.com/wingify/api/v1.0/product/
+ - **URL** : https://vast-everglades-95203.herokuapp.com/wingify/api/v1.0/product/P1008
  - **Method** :  DELETE
  - **Body** : not needed
  - **Response** : 
