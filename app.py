@@ -116,7 +116,7 @@ def post_product():
     output=[]
     output.append({"pid": new_product["pid"], "name": new_product["name"], "description": new_product["description"],"supplier_name": new_product["supplier_name"], "status": new_product["status"],"price": new_product["price"]})
 
-    return jsonify({"result":output})
+    return jsonify({"result":output,"status":"Successfully added the product"})
 
 # post function to update a specific product depending on pid
 @app.route('/wingify/api/v1.0/product/<pid>', methods=['POST'])
@@ -128,6 +128,7 @@ def update_product(pid):
     if not check :
 
         output = "No product find with pid " + pid
+        return jsonify({"result":output})
 
 
     else:
@@ -166,7 +167,7 @@ def update_product(pid):
         output=[]
         output.append({"pid": new_product["pid"], "name": new_product["name"], "description": new_product["description"],"supplier_name": new_product["supplier_name"], "status": new_product["status"],"price": new_product["price"]})
 
-    return jsonify({"result":output})
+    return jsonify({"result":output,"status":"Successfully updated product"})
 
 
 @app.route('/wingify/api/v1.0/product/<pid>', methods=['DELETE'])
