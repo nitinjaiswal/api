@@ -139,4 +139,6 @@ This api has five main functions :
 
 ## Testing the API
 
-- Run the Python file 'test.py' using command 'python test.py'
+To test the APi
+
+- Run the Python file `test.py` using command `python test.py`
