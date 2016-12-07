@@ -8,7 +8,15 @@ This api has five main functions :
  - to update a product of given pid
  - to delete a product of given pid
  
- 
+###API Authentication
+
+User has to authenticate once before using the API in each session.
+Following are the username and password:
+
+> - username: nitin, password: nitin
+> - username: vipin, password: vipin
+> - username: sunil, password: sunil
+> - username: amit, password: amit 
 
 ###Display all the product from database
 
@@ -136,8 +144,16 @@ This api has five main functions :
  
  
 
-
 ## Testing the API
+
+
+To test the API
+
+<<<<<<< HEAD
+- Run the Python file `test.py` using command `python test.py`
+=======
+## Testing the API
+>>>>>>> fee67be443c74a4aa1b50d749c9a7af17ea802bd
 
 To test the API
 
